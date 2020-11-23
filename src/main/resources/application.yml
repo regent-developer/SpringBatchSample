@@ -10,7 +10,10 @@ spring:
     username: root
     password: root
     driver-class-name: com.mysql.cj.jdbc.Driver
+    schema: classpath:schema-mysql.sql
   #batch
   batch:
+    #下面的配置是在初始化的时候会执行上面的schema-mysql.sql中的表
+    #initialize-schema: always
     job:
       enabled: false
