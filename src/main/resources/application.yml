@@ -1,0 +1,16 @@
+
+server:
+  #服务端口号
+  port: 9090
+  
+spring:
+  #数据源
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/db?useUnicode=true&characterEncoding=UTF-8&useSSL=true&serverTimezone=GMT%2B8
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  #batch
+  batch:
+    job:
+      enabled: false
